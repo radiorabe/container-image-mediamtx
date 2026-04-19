@@ -1,4 +1,4 @@
-FROM bluenviron/mediamtx:1.17.0 AS upstream
+FROM bluenviron/mediamtx:1.17.1 AS upstream
 FROM ghcr.io/radiorabe/ubi10-minimal:0.1.3 AS app
 
 COPY --from=upstream /LICENSE /
