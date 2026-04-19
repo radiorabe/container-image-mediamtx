@@ -6,10 +6,6 @@ updates:
       interval: daily
     commit-message:
       prefix: "chore: "
-    groups:
-      baseimages:
-        patterns:
-          - "*"
     cooldown:
       default-days: 7
   - package-ecosystem: github-actions
