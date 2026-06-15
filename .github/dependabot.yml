@@ -8,6 +8,10 @@ updates:
       prefix: "chore: "
     cooldown:
       default-days: 7
+    groups:
+      baseimages:
+        patterns:
+          - "*"
   - package-ecosystem: github-actions
     directory: /
     schedule:
