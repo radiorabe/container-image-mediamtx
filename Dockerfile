@@ -1,5 +1,5 @@
-FROM bluenviron/mediamtx:1.19.2@sha256:f37aaaf1a707c42b0aff49a3ab5d4fa57a3504ebc3f27657434a820e3b16d730 AS upstream
-FROM ghcr.io/radiorabe/ubi10-minimal:0.1.7@sha256:d8303c8a4a9eb4b744b3f18b2db582e8f00622b4151ed57ecdfbba8601959c63 AS app
+FROM bluenviron/mediamtx:1.21.3@sha256:59e43552f3be43695b70c19424dc2a42fcec18075f88d91561a24ac5d70a586c AS upstream
+FROM ghcr.io/radiorabe/ubi10-minimal:0.1.8@sha256:6327bfb9b72d5a2cd8284526fce69bb0d09aeef0c95104d6ff128f87e025c202 AS app
 
 COPY --from=upstream /LICENSE /
 COPY --from=upstream /mediamtx /
